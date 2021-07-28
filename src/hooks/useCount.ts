@@ -9,10 +9,12 @@ interface useCount {
 // eslint-disable-next-line import/prefer-default-export
 export function useCount(initCount: number): useCount {
 	const curCount = ref(initCount);
+
 	const addCount = () => {
 		console.log(curCount.value);
 		curCount.value += 1;
 	};
+
 	const subtCount = () => {
 		console.log(curCount.value);
 		curCount.value -= 1;
