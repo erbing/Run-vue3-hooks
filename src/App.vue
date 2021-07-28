@@ -1,15 +1,18 @@
 <template>
   <HelloWorld msg="Hello"/>
+  <Count />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from './components/HelloWorld.vue';
+import Count from './components/Count.vue';
 
 @Options({
-  components: {
-    HelloWorld,
-  },
+	components: {
+		HelloWorld,
+		Count,
+	},
 })
 export default class App extends Vue {}
 </script>
